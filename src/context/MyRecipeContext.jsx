@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from 'react'
 
 export const recipeContext = createContext(null)
 
-const RecipeContext = (props) => {
+const MyRecipeContext = (props) => {
 
   let defaultRecipe = [
     
@@ -420,4 +420,4 @@ let [recipeData, setRecipeData] = useState(()=>{
   )
 }
 
-export default RecipeContext
+export default MyRecipeContext

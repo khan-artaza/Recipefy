@@ -1,15 +1,16 @@
-import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import RecipeContext from './context/recipeContext.jsx'
+import MyRecipeContext from './context/MyRecipeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <RecipeContext>
+<MyRecipeContext>
     <BrowserRouter>
     <App />
     </BrowserRouter>
-  </RecipeContext>
+</MyRecipeContext>
+ 
 
 )
