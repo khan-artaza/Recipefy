@@ -10,7 +10,7 @@ const Navbar = () => {
             <NavLink className={(e)=>e.isActive? "text-lime-600" : ""} to={"/recipes"}>Recipes</NavLink>
         </div>
         <button className='bg-lime-600 text-white px-3 py-1 rounded-xl'>
-      <NavLink className={(e)=>e.isActive? "text-black" : "" } to={"/create-recipe"}>Create <i class="ri-add-fill"></i></NavLink>
+      <NavLink className={(e)=>e.isActive? "text-black" : "" } to={"/create-recipe"}>Create <i className="ri-add-fill"></i></NavLink>
         </button>
     </div>
   )
