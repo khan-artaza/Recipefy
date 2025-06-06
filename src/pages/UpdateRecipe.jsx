@@ -45,7 +45,15 @@ const UpdateRecipe = () => {
   }
 
   return (
-    <div>
+    <div className='font-[Outfit]'>
+      <div className='bg-lime-300 p-4 mt-4 relative'>
+      <img className='w-full h-20 object-cover'  src="/images/baking-ingredients-32002_1920.png" alt="aa" />
+      <i onClick={()=>navigate(-1)} className="ri-arrow-left-line absolute z-40 font-semibold bg-lime-500 py-2 px-3 text-xl bottom-[-60px] left-2 rounded-full"></i>
+      </div>
+
+      
+
+      <h2 className='font-semibold text-3xl font-[Baskervville] text-center p-2'>Edit your <br />recipe</h2>
        <form
         onSubmit={handleSubmit(updateHandler)}
          className='flex flex-col gap-1 px-8'>

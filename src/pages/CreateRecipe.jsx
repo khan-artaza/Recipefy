@@ -46,8 +46,9 @@ const CreateRecipe = () => {
   return (
     <div>
 
-        <div className='bg-lime-300 p-4 mt-4'>
+        <div className='bg-lime-300 p-4 mt-4 relative'>
             <img className='w-full' src="images/cooking-ingredients-32089.svg" alt="" />
+            <i onClick={()=>navigate(-1)} className="ri-arrow-left-line absolute z-40 font-semibold bg-lime-500 py-2 px-3 text-xl bottom-[-60px] left-2 rounded-full"></i>
         </div>
 
         <h2 className='w-[50%] mx-auto text-2xl text-center font-bold py-4 font-[Baskervville]'>Cook It <br /> Your Way!</h2>
