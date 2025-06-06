@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import CategBubble from '../components/CategBubble'
-import { recipeContext } from '../context/recipeContext'
+
 import { Link, useNavigate } from 'react-router-dom'
+import { recipeContext } from '../context/MyRecipeContext'
 
 
   let categRecipe = ""

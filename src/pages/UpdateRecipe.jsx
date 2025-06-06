@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate, useParams } from 'react-router-dom';
-import { recipeContext } from '../context/recipeContext';
+import { recipeContext } from '../context/MyRecipeContext';
 
 const UpdateRecipe = () => {
 
