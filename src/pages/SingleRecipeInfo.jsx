@@ -13,12 +13,16 @@ const SingleRecipeInfo = () => {
 
   
   let currRecipe = recipeData.filter((rec)=>rec.id == params.id)
+console.log(currRecipe[0]);
 
   let ingr = currRecipe[0].ingredients.map((ingr)=>{
     return(
       <li className='marker:text-lime-500'>{ingr}</li>
     )
   })
+
+  console.log(currRecipe[0].instructions);
+  
 
   let dirc = currRecipe[0].instructions.map((dirc)=>{
     return(
@@ -48,11 +52,8 @@ const SingleRecipeInfo = () => {
     <div className='font-[Outfit] relative'>
       <img className='w-full z-10 aspect-square object-cover object-bootom' src={currRecipe[0].image} alt="" />
 
-      
       <i onClick={()=>navigate(-1)} className="ri-arrow-left-line absolute z-40 font-semibold bg-lime-500 py-2 px-3 text-xl top-3 left-2 rounded-full"></i>
         
-
-
       <div className=' px-6 rounded-4xl pt-10 absolute w-full top-65 border-white z-20 bg-white'>
         <div className="top flex items-center justify-between w-full">
           <div className="name flex flex-col items-start">
