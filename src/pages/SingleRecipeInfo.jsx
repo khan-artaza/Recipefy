@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { recipeContext } from '../context/MyRecipeContext';
+import { toast } from 'react-toastify';
 
 const SingleRecipeInfo = () => {
   let params = useParams()
@@ -28,6 +29,7 @@ const SingleRecipeInfo = () => {
   function deleteHandler(){
     let filteredData = recipeData.filter((rec)=> rec.id != params.id)
     setRecipeData(filteredData)
+    toast.error("Recipe deleted!")
     navigate("/recipes")
   }
 

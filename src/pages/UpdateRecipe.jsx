@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate, useParams } from 'react-router-dom';
 import { recipeContext } from '../context/MyRecipeContext';
+import { toast } from 'react-toastify';
 
 const UpdateRecipe = () => {
 
@@ -41,6 +42,7 @@ const UpdateRecipe = () => {
     let copyData = [...recipeData]
     copyData[index] = {...copyData[index], ...data}
     setRecipeData(copyData)
+    toast.success("Recipe updated!")
     navigate(-1)
   }
 

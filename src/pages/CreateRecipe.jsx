@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form'
 import {nanoid} from 'nanoid'
 import {useNavigate} from 'react-router-dom'
 import { recipeContext } from '../context/MyRecipeContext';
+import { toast } from 'react-toastify';
 
 const CreateRecipe = () => {
 
@@ -39,8 +40,8 @@ const CreateRecipe = () => {
         setRecipeData(copyArr);
         console.log(copyArr);
         reset()
+        toast.success("Your recipe created sucessfully!")
         navigate("/recipes")
-    
     }
 
   return (
