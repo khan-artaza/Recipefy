@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Recipe from '../pages/Recipe'
 import Home from '../pages/Home'
-import CreateRecipe from '../pages/createRecipe'
+import CreateRecipe from '../pages/CreateRecipe'
 import SingleRecipeInfo from '../pages/SingleRecipeInfo'
 import UpdateRecipe from '../pages/UpdateRecipe'
 
