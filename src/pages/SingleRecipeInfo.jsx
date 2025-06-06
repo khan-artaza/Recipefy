@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { recipeContext } from '../context/recipeContext';
+import { recipeContext } from '../context/RecipeContext';
 
 const SingleRecipeInfo = () => {
   let params = useParams()
